@@ -1,11 +1,20 @@
 import React from "react";
-import Banner from '../Components/NavBar'
-
+import EventCard from "../Components/EventCard";
+import NavBar from "../Components/NavBar";
+import '../Styles/Home.css';
 
 function Home() {
     return (
         <>
-            <Banner />
+            <div className="body">
+                <NavBar />
+                <div className="container-cards">
+                    <EventCard />
+                    <EventCard />
+                    <EventCard />
+                    <EventCard />
+                </div>
+            </div>
         </>
     );
 }
