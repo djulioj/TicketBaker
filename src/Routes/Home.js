@@ -4,9 +4,9 @@ import Banner from '../Components/NavBar'
 
 function Home() {
     return (
-        <div>
+        <>
             <Banner />
-        </div>
+        </>
     );
 }
 
