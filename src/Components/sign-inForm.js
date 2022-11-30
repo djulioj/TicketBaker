@@ -1,5 +1,4 @@
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
+import { Link } from 'react-router-dom';
 import '../Styles/sign-inForm.css';
 
 function FormSigIn() {
@@ -12,8 +11,6 @@ function FormSigIn() {
         <p className='text'>Contraseña</p>
         <input className='user' type={"password"}></input>
         <a className="sign-in" href="#">Iniciar sesión</a>
-        <a className="log-in" href="#">Registrarse</a>
-
     </div>
     
   );
