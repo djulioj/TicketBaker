@@ -7,8 +7,12 @@ function NavBar() {
         <div className="container">
             <h1 className="page-name">TicketBaker</h1>
             <div className="container-buttons">
-                <a className="sign-in" href="#">Iniciar sesión</a>
-                <a className="log-in" href="#">Registrarse</a>
+                <Link className="" to={'/sign-in'}>
+                    <a className="sign-in" href="#">Iniciar sesión</a>
+                </Link>
+                <Link className="" to={'/log-in'}>
+                    <a className="log-in" href="#">Registrarse</a>
+                </Link>
             </div>
         </div>
     );

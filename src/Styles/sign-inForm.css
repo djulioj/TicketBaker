@@ -1,0 +1,80 @@
+.card {
+    height:450px;
+    width: 400px;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.title {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    color: #170F49;
+}
+
+.text {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    color: #170F49;
+}
+
+.user {
+    width: min-content;
+    height: 40px;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 16px;
+    border-width: 0px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 18px;
+    box-shadow: 0px 0px 5px rgba(66,66,66,.32);
+     text-shadow: 0px 0px 0px rgba(66,66,66,.47);
+}
+
+.check{
+    display: flex;
+    margin: 0 auto;
+}
+
+.sign-in {
+	background-color:#4A3AFF;
+	border-radius:28px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:1rem;
+	text-decoration:none;
+    margin: 50px auto;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 175px;
+}
+
+.sign-in:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.log-in {
+	border-radius:28px;
+	cursor:pointer;
+	color:#6C5CE7;
+	font-size:1rem;
+	text-decoration:none;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.log-in:hover {
+    text-decoration: underline;
+}
