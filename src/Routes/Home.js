@@ -1,8 +1,8 @@
 import React from "react";
 import EventCard from "../Components/EventCard";
 import NavBar from "../Components/NavBar";
-import Footer from "../Components/Footer";
 import '../Styles/Home.css';
+
 
 function Home() {
     return (
@@ -34,7 +34,6 @@ function Home() {
                     date="25 de noviembre"
                     price="200000"
                     place="Estadio el Campín"/>
-                    
                 </div>
             </div>
         </>

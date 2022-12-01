@@ -47,9 +47,9 @@
     margin: 0 auto;
 }
 
-.sign-in {
-	background-color:#4A3AFF;
-	border-radius:28px;
+.sign-in2 {
+    background-color:#2D3436;
+    border-radius:28px;
 	cursor:pointer;
 	color:#ffffff;
 	font-size:1rem;
@@ -60,12 +60,12 @@
     width: 175px;
 }
 
-.sign-in:hover {
+.sign-in2:hover {
     text-decoration: underline;
     color: #FFFFFF;
 }
 
-.log-in {
+.log-in2 {
 	border-radius:28px;
 	cursor:pointer;
 	color:#6C5CE7;
@@ -75,6 +75,6 @@
     text-align: center;
 }
 
-.log-in:hover {
+.log-in2:hover {
     text-decoration: underline;
 }

@@ -12,6 +12,10 @@
     z-index: 10;
 }
 
+.CRUD{
+    display: none;
+}
+
 .Link {
     text-decoration: none;
 }
@@ -30,7 +34,7 @@
 
 .sign-in {
 	background-color:#2D3436;
-	border-radius:28px;
+	border-radius:8px;
 	cursor:pointer;
 	color:#ffffff;
 	font-size:1rem;
@@ -76,8 +80,5 @@
         display: table;
     }
     
-    
-    
-
 }
 
