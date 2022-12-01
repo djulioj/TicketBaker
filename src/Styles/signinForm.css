@@ -49,7 +49,7 @@
 
 .sign-in2 {
     background-color:#2D3436;
-    border-radius:28px;
+    border-radius:8px;
 	cursor:pointer;
 	color:#ffffff;
 	font-size:1rem;
@@ -58,6 +58,9 @@
     margin-bottom: 0px;
     text-align: center;
     width: 175px;
+    height: fit-content;
+    padding:8px 15px;
+
 }
 
 .sign-in2:hover {
@@ -71,7 +74,7 @@
 	color:#6C5CE7;
 	font-size:1rem;
 	text-decoration:none;
-    margin: 0px auto;
+    margin: 20px auto;
     text-align: center;
 }
 

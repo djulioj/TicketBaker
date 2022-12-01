@@ -12,9 +12,9 @@
     z-index: 10;
 }
 
-.CRUD{
+/* .CRUD{
     display: none;
-}
+} */
 
 .Link {
     text-decoration: none;
@@ -59,10 +59,12 @@
 
 .log-in:hover {
     text-decoration: underline;
+    color:#6C5CE7;
 }
 
 .sign-in:hover {
     text-decoration: underline;
+    color: #ffffff;
 }
 
 @media screen and (max-width: 1185px) {

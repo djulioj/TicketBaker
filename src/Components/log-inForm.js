@@ -12,9 +12,8 @@ function FormSigIn() {
         <p className='text'>Contraseña</p>
         <input className='user' type={"password"}></input>
         <Form.Check type="checkbox" label="Vendedor" className='check' />
-        <a className="sign-in" href="#">Iniciar sesión</a>
+        <a className="sign-in2" href="#">Iniciar sesión</a>
     </div>
-    
   );
 }
 

@@ -14,7 +14,9 @@ function NavBar() {
                 <Link className="log-in" to={'/log-in'}>
                    Registrarse
                 </Link>
-                <Button type="submit" className="CRUD">CRUD</Button>
+                <Link className="Crud" to={'/Crud'}>
+                    <Button type="submit" className="CRUD">Administrar</Button>
+                </Link>
             </div>
         </div>
     );

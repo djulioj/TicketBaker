@@ -1,0 +1,9 @@
+.container-card2 {
+    text-align: center;
+    vertical-align: middle;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    background-color: #EAEAEA;
+    width: 100%;
+}

@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './Routes/Home';
 import Sign from './Routes/sign-in';
 import Log from './Routes/log-in';
+import Crud from './Routes/Crud';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route path="/sign-in" element={<Sign />}/>
           <Route path="/log-in" element={<Log />}/>
+          <Route path="/crud" element={<Crud />}/>
         </Routes>
       </Router>
     </div>
