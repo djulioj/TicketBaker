@@ -7,11 +7,11 @@ function NavBar() {
         <div className="container">
             <h1 className="page-name">TicketBaker</h1>
             <div className="container-buttons">
-                <Link className="" to={'/sign-in'}>
-                    <a className="sign-in" href="#">Iniciar sesión</a>
+                <Link className="sign-in" to={'/sign-in'}>
+                    Iniciar sesión
                 </Link>
-                <Link className="" to={'/log-in'}>
-                    <a className="log-in" href="#">Registrarse</a>
+                <Link className="log-in" to={'/log-in'}>
+                   Registrarse
                 </Link>
             </div>
         </div>

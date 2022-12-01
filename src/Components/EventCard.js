@@ -5,18 +5,24 @@ import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-function EventCard() {
+function EventCard(props) {
   return (
     <div className="container-card">
         <Card style={{ width: '18rem'}}>
-            <img className="image" src="BadBunny.png" />
+            <img className="image" src={`${props.image}.png`} />
             <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                    Some quick example text to build on the card title and make up the
-                    bulk of the card's content.
+                <Card.Title><b>{props.name}</b></Card.Title>
+                <hr />
+                <Card.Text >
+                <b>Fecha: </b>{props.date}
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Card.Text>
+                <b>Precio: </b>${props.price}
+                </Card.Text>
+                <Card.Text>
+                <b>Lugar: </b>{props.place}
+                </Card.Text>
+                <Button variant="primary" >Comprar</Button>
             </Card.Body>
         </Card>
     </div>

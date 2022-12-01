@@ -12,6 +12,10 @@
     z-index: 10;
 }
 
+.Link {
+    text-decoration: none;
+}
+
 .page-name {
     font-size: 2rem;
     display: inline-block;
@@ -63,7 +67,17 @@
     }        
 
     .page-name {
-        margin-left: 50px;        
+        display: table;
+        margin: 0 auto;
     }
+    
+    .container-buttons{
+        margin: 15px auto;
+        display: table;
+    }
+    
+    
+    
+
 }
 

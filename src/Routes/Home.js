@@ -1,6 +1,7 @@
 import React from "react";
 import EventCard from "../Components/EventCard";
 import NavBar from "../Components/NavBar";
+import Footer from "../Components/Footer";
 import '../Styles/Home.css';
 
 function Home() {
@@ -9,10 +10,31 @@ function Home() {
             <div className="body">
                 <NavBar />
                 <div className="container-cards">
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
+                    <EventCard 
+                    image="BadBunny"
+                    name="Concierto BadBunny"
+                    date="25 de noviembre"
+                    price="200000"
+                    place="Estadio el Campín"/>
+                    <EventCard 
+                    image="BadBunny"
+                    name="Concierto BadBunny"
+                    date="25 de noviembre"
+                    price="200000"
+                    place="Estadio el Campín"/>
+                    <EventCard 
+                    image="BadBunny"
+                    name="Concierto BadBunny"
+                    date="25 de noviembre"
+                    price="200000"
+                    place="Estadio el Campín"/>
+                    <EventCard 
+                    image="BadBunny"
+                    name="Concierto BadBunny"
+                    date="25 de noviembre"
+                    price="200000"
+                    place="Estadio el Campín"/>
+                    
                 </div>
             </div>
         </>

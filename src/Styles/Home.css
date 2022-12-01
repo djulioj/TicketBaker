@@ -16,8 +16,7 @@
 
 @media screen and (max-width: 1185px) {
     .container-cards{
-        display: block;
-        height: 100vh;
+        display: grid;
     }        
 
 
