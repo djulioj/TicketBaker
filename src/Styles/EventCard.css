@@ -1,5 +1,32 @@
 .container-card {
     margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.less {
+    display: inline-block;
+
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.more {
+    display: inline-block;
+
+    margin-top: 15px;
+}
+
+.buy {
+    margin-top: 15px;
+}
+
+.quantity {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    margin: 13px 5px 0px 5px;
 }
 
 @media screen and (max-width: 1185px) {

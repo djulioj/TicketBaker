@@ -22,7 +22,10 @@ function EventCard(props) {
                 <Card.Text>
                 <b>Lugar: </b>{props.place}
                 </Card.Text>
-                <Button variant="primary" >Comprar</Button>
+                <Button variant="primary" className="buy" >Comprar</Button>
+                <Button variant="primary" className="less" >-</Button>
+                <p className="quantity">0</p>
+                <Button variant="primary" className="more" >+</Button> 
             </Card.Body>
         </Card>
     </div>
