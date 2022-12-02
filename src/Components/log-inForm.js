@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import Form from 'react-bootstrap/Form';
-import '../Styles/signinForm.css';
+import '../Styles/loginForm.css';
 
 function FormSigIn() {
 
@@ -37,12 +37,12 @@ function FormSigIn() {
         <input className='pwd' type={"password"} ref={password}></input>
         {/*<Form.Check type="checkbox" label="Vendedor" className='isVendor' ref={isVendor} />*/}
         {/*<a className="sign-in" href="#">Iniciar sesión</a>*/}
-        <p className='userTypeTag'>Tipo de Usuario</p>
-        <select className="tipoUsuario" ref={userType}>
+        <p className='text'>Tipo de Usuario</p>
+        <select className="userType" ref={userType}>
           <option value="Vendedor">Vendedor</option>
           <option value="Comprador">Comprador</option>
         </select>
-        <button onClick={saveInLocalStorage}>Registrarse</button>
+        <button className='sign-in2' onClick={saveInLocalStorage}>Registrarse</button>
     </div>
   );
 }

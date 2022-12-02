@@ -1,0 +1,101 @@
+.card {
+    height:470px;
+    width: 400px;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.title {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    color: #170F49;
+}
+
+.text {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+    color: #170F49;
+}
+
+.username {
+    width: min-content;
+    height: 40px;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 16px;
+    border-width: 0px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 18px;
+    box-shadow: 0px 0px 5px rgba(66,66,66,.32);
+    text-shadow: 0px 0px 0px rgba(66,66,66,.47);
+}
+
+.pwd {
+    width: min-content;
+    height: 40px;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 16px;
+    border-width: 0px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    border-radius: 18px;
+    box-shadow: 0px 0px 5px rgba(66,66,66,.32);
+    text-shadow: 0px 0px 0px rgba(66,66,66,.47);
+}
+
+.check{
+    display: flex;
+    margin: 0 auto;
+}
+
+.sign-in2 {
+    background-color:#2D3436;
+    border-radius:28px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:1rem;
+	text-decoration:none;
+    margin: 20px auto;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 175px;
+    height: fit-content;
+    padding:8px 15px;
+
+}
+
+.sign-in2:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+
+.userType {
+    margin: 10px auto;
+    border-radius:18px;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    border-width: 0px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    border-style: solid;
+    box-shadow: 0px 0px 5px rgba(66,66,66,.32);
+    text-shadow: 0px 0px 0px rgba(66,66,66,.47);
+}
