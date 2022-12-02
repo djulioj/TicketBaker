@@ -12,6 +12,16 @@ function FormSigIn() {
       const userInfo= JSON.parse(localStorage.getItem(username_login.current.value))      
       if(password_login.current.value === userInfo.contra){
         alert("Inicio de sesion Exitoso")
+        if(userInfo.tipoDeUsuario ==="Vendedor"){
+          alert("Ha ingresado a la interfaz de vendedor")
+          window.location.replace("/Crud")
+        }else{
+          const buyButton = document.getElementById("buyButton")
+          console.log(buyButton)
+          /*buyButton.style = {backgroundColor: '#2D3436', borderColor: '#2D3436', borderRadius: '28px'}*/
+          window.location.replace("/")
+        }
+
       }else{
         alert("User or Password incorrect, try again")
       }
