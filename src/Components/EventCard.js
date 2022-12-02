@@ -7,11 +7,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function EventCard(props) {
 
-
   return (
     <div className="container-card">
       <Card style={{ width: '18rem' }}>
-        <img className="image" src={`${props.image}.png`} />
+        <img className="image" src="BadBunny.png" />
         <Card.Body>
           <Card.Title><b>{props.name}</b></Card.Title>
           <hr />
@@ -24,7 +23,7 @@ function EventCard(props) {
           <Card.Text>
             <b>Lugar: </b>{props.place}
           </Card.Text>
-          <Button id ="buyButton" variant="primary" style={{display:"none"}} className="buy" >Comprar</Button>
+          <Button variant="primary" style={{ backgroundColor: '#2D3436', borderColor: '#2D3436', borderRadius: '28px' }} className="buy" >Comprar</Button>
         </Card.Body>
       </Card>
     </div>

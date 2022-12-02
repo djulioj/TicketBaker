@@ -17,7 +17,7 @@ function EventCard(props) {
   return (
     <div className="container-card3">
         <Card style={{ width: '18rem'}}>
-            <img className="image" src={`${props.image}.png`} />
+            <img className="image" src="BadBunny.png" />
             <Card.Body>
                 <Card.Title><b>{props.name}</b></Card.Title>
                 <hr />

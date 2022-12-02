@@ -17,7 +17,7 @@ function EventList(props) {
                             id={event._id}
                             image={event.imgDir || "BadBunny"}
                             name={event.name}
-                            date={event.date}
+                            date={event.date.substr(0,10)}
                             price={event.price}
                             place={event.place}
                             deleteEvent={props.deleteEvent}
@@ -38,7 +38,7 @@ function EventList(props) {
                                 key={event._id}
                                 image={event.imgDir || "BadBunny"}
                                 name={event.name}
-                                date={event.date}
+                                date={event.date.substr(0,10)}
                                 price={event.price}
                                 place={event.place}
                             />
