@@ -8,7 +8,7 @@ function Log() {
         <>
             <div className="body2">
                 <NavBar />
-                <div className="container-card">
+                <div className="container-card2">
                     <Form />
                 </div>
             </div>
