@@ -31,7 +31,6 @@ function EventCard(props) {
                 <b>Lugar: </b>{props.place}
                 </Card.Text>
                 <Button variant="primary" className="delete" onClick={deleteE} >Eliminar</Button> 
-                <Button variant="primary" className="delete" onClick={copyInfo} >Actualizar</Button>
             </Card.Body>
         </Card>
     </div>

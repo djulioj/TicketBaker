@@ -29,7 +29,6 @@ function EventList(props) {
         );
     } else {
 
-
         return (
             <>
                 <div className="container-cards">

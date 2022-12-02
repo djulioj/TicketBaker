@@ -2,7 +2,6 @@ import {useState} from "react";
 import '../Styles/CrudCard.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import { type } from "@testing-library/user-event/dist/type";
 
 
 function CrudCard(props) {
@@ -23,7 +22,6 @@ function CrudCard(props) {
         newEvent.append("imgDir",imgDir[0]);
         props.createEvent(newEvent);
         document.getElementById("crudForm").reset();
-        console.log(typeof date);
     };
 
     return (

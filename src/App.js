@@ -25,18 +25,17 @@ function App() {
 
   const createEvent = async (newEvent) => {
     if (_id) {
-      // const response = await fetch(
-      //   "https://ticker-backend.onrender.com/api/events/"+_id,
-      //   {
-      //     method: "PUT",
-      //     body: newEvent,
-      //     // headers: {
-      //     //   Accept: "application/json",
-      //     //   "Content-Type": "application/json",
-      //     // },
-      //   }
-      // );
-      // console.log("llego");
+      const response = await fetch(
+        "https://ticker-backend.onrender.com/api/events/"+_id,
+        {
+          method: "PUT",
+          body: newEvent,
+          // headers: {
+          //   Accept: "application/json",
+          //   "Content-Type": "application/json",
+          // },
+        }
+      );
     } else {
       const response = await fetch(
         "https://ticker-backend.onrender.com/api/events",
