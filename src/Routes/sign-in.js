@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import NavBar from "../Components/NavBar-2";
 import '../Styles/signin.css';
 import Form from "../Components/sign-inForm";
 
 function Sign() {
+
     return (
         <>
             <div className="body2">

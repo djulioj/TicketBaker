@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 
 function EventCard(props) {
   return (
-    <div className="container-card2">
+    <div className="container-card3">
         <Card style={{ width: '18rem'}}>
             <img className="image" src={`${props.image}.png`} />
             <Card.Body>

@@ -33,11 +33,7 @@ function FormSigIn() {
         <p className='text'>Usuario</p>
         <input className='username' ref={username}></input>
         <p className='text'>Contraseña</p>
-<<<<<<< Updated upstream
-        <input className='user' type={"password"}></input>
-        <Form.Check type="checkbox" label="Vendedor" className='check' />
-        <a className="sign-in2" href="#">Iniciar sesión</a>
-=======
+
         <input className='pwd' type={"password"} ref={password}></input>
         {/*<Form.Check type="checkbox" label="Vendedor" className='isVendor' ref={isVendor} />*/}
         {/*<a className="sign-in" href="#">Iniciar sesión</a>*/}
@@ -47,7 +43,6 @@ function FormSigIn() {
           <option value="Comprador">Comprador</option>
         </select>
         <button onClick={saveInLocalStorage}>Registrarse</button>
->>>>>>> Stashed changes
     </div>
   );
 }
