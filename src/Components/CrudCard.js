@@ -47,6 +47,7 @@ function CrudCard(props) {
                         className="user"
                         id="nameCrud"
                         onChange={(e) => setName(e.target.value)}
+                        defaultValue={props.id?props.event.name:""}
                     ></input>
                     <p className="text2">
                         <b>Fecha</b>
@@ -56,6 +57,7 @@ function CrudCard(props) {
                         id="dateCrud"
                         type={"date"}
                         onChange={(e) => setDate(e.target.value)}
+                        defaultValue={props.id?props.event.date:""}
                     ></input>
                     <p className="text2">
                         <b>Precio</b>
@@ -65,6 +67,7 @@ function CrudCard(props) {
                         id="priceCrud"
                         type="number"
                         onChange={(e) => setPrice(e.target.value)}
+                        defaultValue={props.id?props.event.price:""}
                     ></input>
                     <p className="text2">
                         <b>Lugar</b>
@@ -73,6 +76,7 @@ function CrudCard(props) {
                         className="user"
                         id="placeCrud"
                         onChange={(e) => setPlace(e.target.value)}
+                        defaultValue={props.id?props.event.place:""}
                     ></input>
                     <p className="text2">
                         <b>Imagen</b>
@@ -82,6 +86,7 @@ function CrudCard(props) {
                         id="imgCrud"
                         style={{marginTop:"15px"}}
                         onChange={(e) => setImgDir(e.target.value)}
+                        defaultValue={props.id?props.event.imgDir:""}
                     />
                     <Button variant="primary" className="save" type="submit" id="Save">
                         Guardar

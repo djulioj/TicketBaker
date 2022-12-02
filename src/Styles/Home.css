@@ -7,8 +7,9 @@
 }
 
 .container-cards{
-    height: 100%;
+    height: 60%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     background-color: #EAEAEA;
     width: 100%;

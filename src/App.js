@@ -9,6 +9,9 @@ import Crud from './Routes/Crud';
 
 function App() {
 
+  const [_id, setId] = useState("");
+  const [event, setEvent] = useState({});
+
   const [events, setEvents] = useState([]);
   const loadEvents = async () => {
     const data = await fetch("https://ticker-backend.onrender.com/api/events");
@@ -20,16 +23,21 @@ function App() {
     loadEvents();
   }, []);
 
-  const createEvent = async (event) => {
-    const response = await fetch("https://ticker-backend.onrender.com/api/events", {
-      method: "POST",
-      body: JSON.stringify(event),
-      headers: {
-        "Accept": "application/json",
-        "Content-Type": "application/json"
-      }
-    });
-    console.log(response);
+  const createEvent = async (newEvent) => {
+    if (_id != "") {
+    } else {
+      const response = await fetch(
+        "https://ticker-backend.onrender.com/api/events",
+        {
+          method: "POST",
+          body: JSON.stringify(newEvent),
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+        }
+      );
+    }
     loadEvents();
   };
 
@@ -46,6 +54,16 @@ function App() {
     loadEvents();
   };
 
+  const editEvent = async (id) => {
+    const data = await fetch(
+      "https://ticker-backend.onrender.com/api/events/" + id
+    );
+    const event = await data.json();
+    setId(event._id);
+    setEvent(event);
+  };
+
+
   return (
     <div className="App">
       <Router>
@@ -53,7 +71,15 @@ function App() {
           <Route path="/" element={<Home events={events} />} />
           <Route path="/sign-in" element={<Sign />} />
           <Route path="/log-in" element={<Log />} />
-          <Route path="/crud" element={<Crud events={events} createEvent={createEvent} deleteEvent={deleteEvent} />}
+          <Route path="/crud" element={
+            <Crud
+              events={events}
+              event={event}
+              id={_id}
+              createEvent={createEvent}
+              deleteEvent={deleteEvent}
+              editEvent={editEvent}
+            />}
           />
         </Routes>
       </Router>

@@ -14,11 +14,12 @@ function Crud(props) {
             <div className="body2">
                 <NavBar />
                 <div className="container-crud">
-                    <CrudCard createEvent={props.createEvent} />
+                    <CrudCard createEvent={props.createEvent} id={props.id} event={props.event} />
                     <EventList 
-                    events={props.events}
-                    deleteEvent = {props.deleteEvent}
-                    crud={true}
+                        events={props.events}
+                        deleteEvent={props.deleteEvent}
+                        editEvent={props.editEvent}
+                        crud={true}
                     />
                 </div>
             </div>
