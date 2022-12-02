@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
 import '../Styles/NavBar.css';
 
 function NavBar() {
@@ -14,8 +13,8 @@ function NavBar() {
                 <Link className="log-in" to={'/log-in'}>
                    Registrarse
                 </Link>
-                <Link className="Crud" to={'/Crud'}>
-                    <Button type="submit" className="CRUD">Administrar</Button>
+                <Link className="crudButton"  to={'/Crud'}>
+                    Administrar
                 </Link>
             </div>
         </div>

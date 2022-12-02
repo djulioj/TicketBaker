@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 function CrudCard() {
     return (
         <form className="container-CrudCard">
-            <Card style={{ width: '25rem', height: '35rem', marginLeft: '200px', position: 'fixed' }}>
+            <Card style={{ width: '25rem', height: '38rem', marginLeft: '200px', position: 'fixed' }}>
                 <Card.Body>
                     <Card.Title><b>Administrar evento</b></Card.Title>
                     <hr />
@@ -20,8 +20,8 @@ function CrudCard() {
                     <p className='text2'><b>Lugar</b></p>
                     <input className='user' id="placeCrud"></input>
                     <p className='text2'><b>Imagen</b></p>
-                    <input type="file" id="imgCrud" />
-                    <Button variant="primary" className="buy" onClick={addUpdate} id="Save" >Guardar</Button>
+                    <input type="file" id="imgCrud" style={{marginTop: '15px'}} />
+                    <button variant="primary" className="save" onClick={addUpdate} id="Save" >Guardar</button>
                 </Card.Body>
             </Card>
         </form>

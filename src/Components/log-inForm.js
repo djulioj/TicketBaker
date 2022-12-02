@@ -18,7 +18,7 @@ function FormSigIn() {
         }
         localStorage.setItem(username.current.value,JSON.stringify(userInfo))
         alert("Registro Exitoso")
-        window.location.replace("/")
+        window.location.replace("/");
       }else{
         alert("Este usuario ya existe")
       }  
