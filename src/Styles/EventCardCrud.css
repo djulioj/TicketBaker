@@ -8,3 +8,16 @@
     width: 100%;
 }
 
+.delete {
+    background-color:#2D3436;
+	border-radius:28px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:1rem;
+	padding:8px 15px;
+	text-decoration:none;
+    margin: 5px auto;
+    text-align: center;
+    border-width: 0;
+}
+

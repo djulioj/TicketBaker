@@ -7,27 +7,17 @@ import EventList from "../Components/EventList";
 
 
 
-function Crud() {
-
-    const [events, setEvents] = useState([]);
-
-    const loadEvents = async () => {
-        const data = await fetch("https://ticker-backend.onrender.com/api/events");
-        const events = await data.json();
-        setEvents(events);
-    }
-
-    useEffect(() => {
-        loadEvents();
-    }, []);
+function Crud(props) {
 
     return (
         <>
             <div className="body2">
                 <NavBar />
                 <div className="container-crud">
-                    <CrudCard />
+                    <CrudCard createEvent={props.createEvent} />
                     <EventList 
+                    events={props.events}
+                    deleteEvent = {props.deleteEvent}
                     crud={true}
                     />
                 </div>
