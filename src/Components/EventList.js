@@ -15,9 +15,9 @@ function EventList(props) {
                         <EventCardCrud
                             key={event._id}
                             id={event._id}
-                            image={event.imgDir || "BadBunny"}
+                            image={"BadBunny"}
                             name={event.name}
-                            date={event.date}
+                            date={event.date.substr(0,10)}
                             price={event.price}
                             place={event.place}
                             deleteEvent={props.deleteEvent}
@@ -37,9 +37,9 @@ function EventList(props) {
                         props.events.map(event => (
                             <EventCard
                                 key={event._id}
-                                image={event.imgDir || "BadBunny"}
+                                image={"BadBunny"}
                                 name={event.name}
-                                date={event.date}
+                                date={event.date.substr(0,10)}
                                 price={event.price}
                                 place={event.place}
                             />

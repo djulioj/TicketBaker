@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import '../Styles/signinForm.css';
 
 function FormSigIn() {
@@ -30,7 +31,7 @@ function FormSigIn() {
         <p className='text'>Contraseña</p>
         <input className='user' type={"password"} ref={password_login}></input>
         <a className="sign-in2" href="#" onClick={logInValidation}>Iniciar sesión</a>
-        <a className="log-in2" href="#">Registrarse</a>
+        <Link className="log-in2" to={'/log-in'}>Registrarse</Link>
     </div>
     
   );

@@ -10,6 +10,10 @@ function EventCard(props) {
     props.deleteEvent(props.id);
   };
 
+  const copyInfo=()=>{
+    props.editEvent(props.id);
+  }
+
   return (
     <div className="container-card3">
         <Card style={{ width: '18rem'}}>
@@ -27,6 +31,7 @@ function EventCard(props) {
                 <b>Lugar: </b>{props.place}
                 </Card.Text>
                 <Button variant="primary" className="delete" onClick={deleteE} >Eliminar</Button> 
+                <Button variant="primary" className="delete" onClick={copyInfo} >Actualizar</Button>
             </Card.Body>
         </Card>
     </div>

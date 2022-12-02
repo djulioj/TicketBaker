@@ -13,9 +13,6 @@ function NavBar() {
                 <Link className="log-in" to={'/log-in'}>
                    Registrarse
                 </Link>
-                <Link className="crudButton"  to={'/Crud'}>
-                    Administrar
-                </Link>
             </div>
         </div>
     );

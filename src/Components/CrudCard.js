@@ -2,6 +2,7 @@ import {useState} from "react";
 import '../Styles/CrudCard.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { type } from "@testing-library/user-event/dist/type";
 
 
 function CrudCard(props) {
@@ -14,15 +15,15 @@ function CrudCard(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const newEvent = {
-            name,
-            date,
-            place,
-            price,
-            imgDir,
-        };
+        const newEvent = new FormData();
+        newEvent.append("name",name);
+        newEvent.append("date",date);
+        newEvent.append("price",price);
+        newEvent.append("place",place);
+        newEvent.append("imgDir",imgDir[0]);
         props.createEvent(newEvent);
         document.getElementById("crudForm").reset();
+        console.log(typeof date);
     };
 
     return (
@@ -56,7 +57,7 @@ function CrudCard(props) {
                         className="user"
                         id="dateCrud"
                         type={"date"}
-                        onChange={(e) => setDate(e.target.value)}
+                        onChange={(e) => setDate(e.target.value)}    
                         defaultValue={props.id?props.event.date:""}
                     ></input>
                     <p className="text2">

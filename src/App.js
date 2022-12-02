@@ -24,19 +24,32 @@ function App() {
   }, []);
 
   const createEvent = async (newEvent) => {
-    if (_id != "") {
+    if (_id) {
+      // const response = await fetch(
+      //   "https://ticker-backend.onrender.com/api/events/"+_id,
+      //   {
+      //     method: "PUT",
+      //     body: newEvent,
+      //     // headers: {
+      //     //   Accept: "application/json",
+      //     //   "Content-Type": "application/json",
+      //     // },
+      //   }
+      // );
+      // console.log("llego");
     } else {
       const response = await fetch(
         "https://ticker-backend.onrender.com/api/events",
         {
           method: "POST",
-          body: JSON.stringify(newEvent),
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-          },
+          body: newEvent,
+          // headers: {
+          //   Accept: "application/json",
+          //   "Content-Type": "application/json",
+          // },
         }
       );
+      console.log("oaaa");
     }
     loadEvents();
   };
