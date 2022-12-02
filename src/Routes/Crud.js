@@ -3,6 +3,8 @@ import NavBar from "../Components/NavBar-2";
 import CrudCard from "../Components/CrudCard";
 import "../Styles/Crud.css";
 import EventCard from "../Components/EventCardCrud";
+import EventList from "../Components/EventList";
+
 
 
 function Crud() {
@@ -25,20 +27,9 @@ function Crud() {
                 <NavBar />
                 <div className="container-crud">
                     <CrudCard />
-                    <div className="container-cards2">
-                        {
-                            events.map(event => (
-                                <EventCard
-                                    key={event._id}
-                                    image={event.imgDir || "BadBunny"}
-                                    name={event.name}
-                                    date={event.date}
-                                    price={event.price}
-                                    place={event.place}
-                                />
-                            ))
-                        }
-                    </div>
+                    <EventList 
+                    crud={true}
+                    />
                 </div>
             </div>
         </>

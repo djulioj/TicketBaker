@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import EventCard from "../Components/EventCard";
 import NavBar from "../Components/NavBar";
 import '../Styles/Home.css';
+import EventList from "../Components/EventList";
 
 function Home() {
 
@@ -21,20 +21,7 @@ function Home() {
         <>
             <div className="body">
                 <NavBar />
-                <div className="container-cards">
-                    {
-                        events.map(event => (
-                            <EventCard
-                                key={event._id}
-                                image={event.imgDir||"BadBunny"}
-                                name={event.name}
-                                date={event.date}
-                                price={event.price}
-                                place={event.place}
-                            />
-                        ))
-                    }
-                </div>
+                <EventList/>
             </div>
         </>
     );
