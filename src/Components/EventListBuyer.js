@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import EventCard from "../Components/EventCard";
+import EventCard from "../Components/EventCardForBuyer";
 import EventCardCrud from "../Components/EventCardCrud";
 import "../Styles/Home.css";
 import "../Styles/Crud.css";
@@ -15,9 +15,9 @@ function EventList(props) {
                         <EventCardCrud
                             key={event._id}
                             id={event._id}
-                            image="Camilo-Colombia"
+                            image={event.imgDir || "BadBunny"}
                             name={event.name}
-                            date={event.date.substr(0,10)}
+                            date={event.date}
                             price={event.price}
                             place={event.place}
                             deleteEvent={props.deleteEvent}
@@ -29,6 +29,7 @@ function EventList(props) {
         );
     } else {
 
+
         return (
             <>
                 <div className="container-cards">
@@ -36,9 +37,9 @@ function EventList(props) {
                         props.events.map(event => (
                             <EventCard
                                 key={event._id}
-                                image="Camilo-Colombia"
+                                image={event.imgDir || "BadBunny"}
                                 name={event.name}
-                                date={event.date.substr(0,10)}
+                                date={event.date}
                                 price={event.price}
                                 place={event.place}
                             />
